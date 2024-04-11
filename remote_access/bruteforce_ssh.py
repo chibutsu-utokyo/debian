@@ -32,7 +32,7 @@ with open(passwords_path, "r") as file:
 
             sys.exit()
         except paramiko.AuthenticationException:
-            print(f"{PASSWORD} is not correct...")
+            print(f"{PASSWORD} is not correct")
         finally:
             ssh.close()
 
