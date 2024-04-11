@@ -1,0 +1,28 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get install -y openssh-server
+
+RUN mkdir /var/run/sshd
+
+ENV ROOT_PASSWORD="ubuntu"
+ENV USER_NAME="chibutsu"
+ENV USER_PASSWORD="aurora"
+
+RUN echo "root:${ROOT_PASSWORD}" | chpasswd
+RUN sed -i 's/#\?PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+RUN useradd -m ${USER_NAME} && \
+    echo "${USER_NAME}:${USER_PASSWORD}" | chpasswd && \
+    usermod --shell /bin/bash ${USER_NAME}
+
+WORKDIR /home/${USER_NAME}
+RUN touch congrats && \
+    echo "ユーザーchibutsuの乗っ取りに成功しました！" > congrats
+
+ENV NOTVISIBLE "in users profile"
+RUN echo "export VISIBLE=now" >> /etc/profile
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D"]
+
