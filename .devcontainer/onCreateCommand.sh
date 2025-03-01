@@ -1,10 +1,8 @@
-# Ubuntu packages
+# debian packages
+export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get install -y \
-    acl \
-    gfortran \
-    gnuplot-nox
+xargs -a .devcontainer/debian-packages.txt apt-get install -y
 
 # acl
-chown -R codespace:codespace .
+chown -R vscode:vscode .
 setfacl -bnR .

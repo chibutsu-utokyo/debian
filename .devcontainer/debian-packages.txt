@@ -1,0 +1,17 @@
+acl
+build-essential
+curl
+g++
+gcc
+gdb
+gfortran
+git
+git-lfs
+gnuplot-nox
+make
+rsync
+sudo
+tree
+unzip
+vim
+wget

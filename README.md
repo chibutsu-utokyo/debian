@@ -40,6 +40,6 @@ codespaceのVSCode上のターミナルでは，デフォルトでカレント�
   
 | 名前 | 環境変数名 | パス |
 |---|---|---|
-| ホーム | `HOME` | `/home/codespace` |
-| ワークスペース | `CODESPACE_VSCODE_FOLDER` | `/workspaces/ubuntu-22.04` |
+| ホーム | `HOME` | `/home/vscode` |
+| ワークスペース | `CODESPACE_VSCODE_FOLDER` | `/workspaces/debian` |
 
