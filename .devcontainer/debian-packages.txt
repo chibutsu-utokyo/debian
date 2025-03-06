@@ -7,11 +7,13 @@ gdb
 gfortran
 git
 git-lfs
-gnuplot-nox
+gnuplot-x11
 make
+openssh-server
 rsync
 sudo
 tree
 unzip
 vim
 wget
+x11-apps
