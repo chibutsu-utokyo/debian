@@ -22,3 +22,7 @@ fi
 #    git clone https://github.com/amanotk/python-resume-answer.git answer
 #fi
 
+# Install GitHub Copilot CLI
+if ! command -v copilot >/dev/null 2>&1; then
+  curl -fsSL https://gh.io/copilot-install | bash
+fi
