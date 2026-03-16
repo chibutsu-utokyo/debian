@@ -5,7 +5,7 @@ WORKSPACE=/workspaces/$RepositoryName
 find . -type d -print | xargs chmod 755
 
 # python modules
-python3 -m pip install -r .devcontainer/python-packages.txt
+sudo /usr/local/bin/uv pip sync --system .devcontainer/python-packages.txt
 python3 -m gnuplot_kernel install --user
 
 cd $WORKSPACE

@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
   "hostRequirements": {
     "cpus": 2
   },
@@ -11,16 +11,18 @@
       "openFiles": []
     },
     "vscode": {
-      "extensions": [
-        "ms-toolsai.jupyter",
-        "ms-python.python",
-        "ms-vscode.cpptools",
-        "ms-vscode.cpptools-themes",
-        "ms-vscode-remote.vscode-remote-extensionpack",
-        "ms-vscode-remote.remote-containers",
-        "fortran-lang.linter-gfortran",
-        "GitHub.copilot",
-        "Blamsoft.fprettify",
+        "extensions": [
+          "ms-toolsai.jupyter",
+          "ms-python.python",
+          "charliermarsh.ruff",
+          "ms-vscode.cpptools",
+          "ms-vscode.cpptools-themes",
+          "ms-vscode-remote.vscode-remote-extensionpack",
+          "ms-vscode-remote.remote-containers",
+          "marimo-team.vscode-marimo",
+          "fortran-lang.linter-gfortran",
+          "GitHub.copilot",
+          "Blamsoft.fprettify",
         "shd101wyy.markdown-preview-enhanced",
         "fizzybreezy.gnuplot"
       ]

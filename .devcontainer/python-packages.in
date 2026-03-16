@@ -1,0 +1,17 @@
+jupyterlab
+notebook
+ipywidgets
+matplotlib
+numpy
+scipy
+pandas
+tqdm
+cython
+numba
+metakernel
+gnuplot-kernel
+black
+nbstripout
+fprettify
+ruff
+marimo

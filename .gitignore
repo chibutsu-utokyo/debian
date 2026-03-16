@@ -1,2 +1,3 @@
 fortran/
 python/
+.ruff_cache/
