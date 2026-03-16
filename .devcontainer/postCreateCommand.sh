@@ -26,3 +26,8 @@ fi
 if ! command -v copilot >/dev/null 2>&1; then
   curl -fsSL https://gh.io/copilot-install | bash
 fi
+
+# Install OpenCode CLI
+if ! command -v opencode >/dev/null 2>&1; then
+  curl -fsSL https://opencode.ai/install | bash
+fi
