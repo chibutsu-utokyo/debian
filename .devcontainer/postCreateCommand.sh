@@ -36,3 +36,13 @@ fi
 if ! command -v codex >/dev/null 2>&1; then
   npm install -g @openai/codex
 fi
+
+# Install Claude Code
+if ! command -v claude >/dev/null 2>&1; then
+  npm install -g @anthropic-ai/claude-code
+fi
+
+# Install Ollama
+if ! command -v ollama >/dev/null 2>&1; then
+  curl -fsSL https://ollama.com/install.sh | sh
+fi
