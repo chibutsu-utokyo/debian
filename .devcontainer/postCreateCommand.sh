@@ -15,34 +15,8 @@ if [ ! -d "fortran" ]; then
     git clone https://github.com/amanotk/fortran-resume-answer.git answer
 fi
 
-#cd $WORKSPACE
-#if [ ! -d "python" ]; then
-#    mkdir python && cd python
-#    git clone https://github.com/amanotk/python-resume-sample.git sample
-#    git clone https://github.com/amanotk/python-resume-answer.git answer
-#fi
+# AI coding assistants (optional)
+# Run .devcontainer/install-all-agents.sh to install all AI agents
 
-# Install GitHub Copilot CLI
-if ! command -v copilot >/dev/null 2>&1; then
-  curl -fsSL https://gh.io/copilot-install | bash
-fi
-
-# Install OpenCode CLI
-if ! command -v opencode >/dev/null 2>&1; then
-  curl -fsSL https://opencode.ai/install | bash
-fi
-
-# Install Codex CLI
-if ! command -v codex >/dev/null 2>&1; then
-  npm install -g @openai/codex
-fi
-
-# Install Claude Code
-if ! command -v claude >/dev/null 2>&1; then
-  npm install -g @anthropic-ai/claude-code
-fi
-
-# Install Ollama
-if ! command -v ollama >/dev/null 2>&1; then
-  curl -fsSL https://ollama.com/install.sh | sh
-fi
+# Ensure ~/.local/bin is in PATH
+export PATH="$HOME/.local/bin:$PATH"
